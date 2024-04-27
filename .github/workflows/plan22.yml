@@ -5,6 +5,10 @@ jobs:
     name: Soc first
     runs-on: ubuntu-latest
     steps:
+    - name: pune-l la punct
+      run: |
+        sudo apt-get update
+        sudo apt-get install mc
     - name: cobor code
       uses: actions/checkout@v4
   build:
