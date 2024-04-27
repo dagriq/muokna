@@ -3,3 +3,9 @@ on: [workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
+    steps:
+    - name: fac un pas
+      run: |
+        valul = "gelu doarme sub nuc"
+        voalul = `cat math.txt`
+        echo A venit $valul si a luat $voalul
