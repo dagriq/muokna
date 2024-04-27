@@ -12,4 +12,5 @@ jobs:
         # valul = "gelu doarme sub nuc"
         # voalul = `cat math.txt`
         echo Pdul de piatra NU s-a darimat
-        echo A venit ${valul:-999] si a luat ${voalul:=998}
+        echo A venit ${valul:-999] 
+        # echo si a luat ${voalul:=998}
