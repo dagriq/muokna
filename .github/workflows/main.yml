@@ -5,6 +5,8 @@ jobs:
     name: Workflow pt construirea socialismului dezvoltat
     runs-on: ubuntu-latest
     steps:
+    - name: cobor code
+      uses: actions/checkout@v4
     - name: fac un pas
       run: |
         # valul = "gelu doarme sub nuc"
