@@ -1,0 +1,22 @@
+name: Planul22
+on: [workflow_dispatch]
+jobs:
+  checkout:
+    name: Soc first
+    runs-on: ubuntu-latest
+    steps:
+    - name: cobor code
+      uses: actions/checkout@v4
+  build:
+    name: Workflow pt construirea socialismului dezvoltat
+    runs-on: ubuntu-latest
+    steps:
+    - name: code done
+      run: echo Done pt prev 
+    - name: fac un pas
+      run: |
+        # valul = "gelu doarme sub nuc"
+        # voalul = `cat math.txt`
+        echo Pdul de piatra NU s-a darimat
+        # echo A venit ${valul:-999] 
+        echo si a luat ${voalul:=998}
