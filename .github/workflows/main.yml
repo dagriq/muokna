@@ -2,10 +2,12 @@ name: Gelu
 on: [workflow_dispatch]
 jobs:
   build:
+    name: Workflow pt construirea socialismului dezvoltat
     runs-on: ubuntu-latest
     steps:
     - name: fac un pas
       run: |
-        valul = "gelu doarme sub nuc"
-        voalul = `cat math.txt`
+        # valul = "gelu doarme sub nuc"
+        # voalul = `cat math.txt`
+        echo Pdul de piatra NU s-a darimat
         echo A venit $valul si a luat $voalul
