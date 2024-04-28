@@ -1,5 +1,5 @@
 name: Planul22-catch-bre
-run-name: Catch 22 by ${{ guthub.actor }}
+run-name: Catch 22 by @${{ guthub.actor }}
 on: [workflow_dispatch]
 jobs:
   checkout:
