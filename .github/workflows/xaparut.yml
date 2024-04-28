@@ -1,0 +1,13 @@
+name: Reactionez cind apare X
+on:
+  issues:
+    types:
+      - opened
+jobs:
+  j101:
+    runs-on: ubuntu-latest
+    steps:
+      - name: prezinta-te
+        run: echo Eu sunt S1 din j101
+      - name: prezinta-te si tu
+        run: echo Eu sunt s2 din j101
