@@ -1,12 +1,18 @@
 name: Planul22-catch-bre
-run-name: Catch 22 by @${{ github.actor }}
+run-name: Catch 22 by ${{ github.actor }}
 on: [workflow_dispatch]
+env:
+  ABCD: wwcicdcj
 jobs:
   checkout:
+    env:
+      SCENAR: jsjsacdc
     name: Soc first
     runs-on: ubuntu-latest
     steps:
     - name: pune-l la punct
+      env:
+        LEBAR: s1dece
       run: |
         sudo apt-get update
         sudo apt-get install mc
