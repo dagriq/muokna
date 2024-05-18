@@ -61,3 +61,12 @@ jobs:
         trigger: '[".*looks good to me bre.*"]'
         overide: true
         source: 'giphy'
+
+
+  ###
+  j528:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "$GITHUB_CONTEXT"
+      env: 
+        GITHUB_CONTEXT: ${{ toJson(github) }}
