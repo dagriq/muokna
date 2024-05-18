@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       reason:
-      description: Why are you running this workflow manually?
-      required: true
-      default: I am running tests before implementing an automated workflow
+        description: Why are you running this workflow manually?
+        required: true
+        default: I am running tests before implementing an automated workflow
 jobs:
   j101:
     runs-on: ubuntu-latest
