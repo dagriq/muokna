@@ -44,3 +44,5 @@ jobs:
         run: echo $GITHUB_WORKSPACE
       - name: show me the WORKFLOW
         run: echo $GITHUB_EVENT_PATH
+      - name: show me the data
+        run: cat $GITHUB_EVENT_PATH/event.json
