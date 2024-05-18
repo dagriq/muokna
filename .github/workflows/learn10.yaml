@@ -1,7 +1,7 @@
 ---
 name: tot-la-scoala
 on: 
-  workflow_dispatch 
+  workflow_dispatch: 
     inputs:
       reason:
       description: Why are you running this workflow manually?
