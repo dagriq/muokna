@@ -3,7 +3,7 @@ name: tot-la-scoala
 on: 
 ########scheduled events
   schedule: 
-    - cron: '*/5 * * * *'
+    - cron: '*/15 * * * *'
 ########webhook events
   issues: 
     types: [opened]
@@ -35,3 +35,12 @@ jobs:
         run: >
           echo "Un client numit [ ${{ github.event.inputs.username }} ] a declansat workflow"
           echo " pt ca/din motivul:  [ ${{ github.event.inputs.reason }} ]"
+  j348:
+    runs-on: ubuntu-latest
+    steps:
+      - name: show me the HOME
+        run: echo $HOME
+      - name: show me the WORKSPACE
+        run: echo $GITHUB_WORKSPACE
+      - name: show me the WORKFLOW
+        run: echo $GITHUB_EVENT_PATH
