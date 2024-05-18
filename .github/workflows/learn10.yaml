@@ -1,10 +1,13 @@
 ---
 name: tot-la-scoala
 on: 
+########scheduled events
   schedule: 
     - cron: '*/5 * * * *'
+########webhook events
   issues: 
     types: [opened]
+########manual events
   repository_dispatch:
     types:
       - manual-trigger-mytest
@@ -25,3 +28,10 @@ jobs:
     steps:
       - name: prezinta-te
         run: echo Eu sunt pic
+  j298:
+    runs-on: ubuntu-latest
+    steps:
+      - name: scrie putin
+        run: >
+          echo "Un client numit [ ${{ github.event.username }} ] a declansat workflow"
+          echo " pt ca/din motivul:  [ ${{ github.event.reason }} ]"
