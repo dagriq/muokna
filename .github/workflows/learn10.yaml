@@ -1,6 +1,10 @@
 ---
 name: tot-la-scoala
 on: 
+  schedule: 
+    - cron: '*/5 * * * *'
+  issues: 
+    types: [opened]
   repository_dispatch:
     types:
       - manual-trigger-mytest
