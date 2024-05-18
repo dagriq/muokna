@@ -58,6 +58,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
         GIPHY_API_KEY: ${{ secrets.TEST_G93 }}
       with:
-        trigger: '[.*looks good to me bre.*]'
+        trigger: '[".*looks good to me bre.*"]'
         override: true
         source: 'giphy'
