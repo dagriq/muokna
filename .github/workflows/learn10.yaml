@@ -3,6 +3,9 @@ name: tot-la-scoala
 on: 
   workflow_dispatch:
     inputs:
+      username: 
+        description: Your GitHub username
+        required: true
       reason:
         description: Why are you running this workflow manually?
         required: true
