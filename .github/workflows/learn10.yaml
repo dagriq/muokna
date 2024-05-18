@@ -1,6 +1,7 @@
 ---
 name: tot-la-scoala
-on: [workflow_dispatch] 
+on: 
+  workflow_dispatch 
 jobs:
   j101:
     runs-on: ubuntu-latest
