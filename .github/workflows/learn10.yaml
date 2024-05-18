@@ -1,6 +1,8 @@
 ---
 name: tot-la-scoala
 on: 
+  repository_dispatch:
+  ### adica workflow can happen in diff-repo , env out of GH 
   workflow_dispatch:
     inputs:
       username: 
