@@ -1,14 +1,15 @@
+---
 name: tot-la-scoala
 on:
   workflow_dispatch:
     inputs:
-      username:
-      description: 'Your GitHub username'
+      username: null
+      description: Your GitHub username
       required: true
     reason:
-      description: 'Why are you running this workflow manually?'
+      description: Why are you running this workflow manually?
       required: true
-      default: 'I am running tests before implementing an automated workflow'
+      default: I am running tests before implementing an automated workflow
 jobs:
   j101:
     runs-on: ubuntu-latest
@@ -17,3 +18,4 @@ jobs:
         run: echo Eu sunt pic
       - name: prezinta-te si tu
         run: echo Eu sunt poc
+
