@@ -48,3 +48,16 @@ jobs:
         run: echo $GITHUB_EVENT_PATH
       - name: show me the data
         run: cat $GITHUB_EVENT_PATH
+##
+  j492:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2 
+    - uses: micnncim/action-lgtm-reaction@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+        GIPHY_API_KEY: ${{ secrets.TEST_G93 }}
+      with:
+        trigger: '[.*looks good to me bre.*]'
+        ovverride: true
+        source: 'giphy'
