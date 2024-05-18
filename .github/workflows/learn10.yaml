@@ -2,6 +2,9 @@
 name: tot-la-scoala
 on: 
   repository_dispatch:
+    types:
+      - manual-trigger-mytest
+      - manual-trigger-all
   ### adica workflow can happen in diff-repo , env out of GH 
   workflow_dispatch:
     inputs:
