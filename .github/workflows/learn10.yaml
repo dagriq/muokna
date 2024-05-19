@@ -39,6 +39,7 @@ jobs:
           echo " pt ca/din motivul:  [ ${{ github.event.inputs.reason }} ]"
   j348:
     runs-on: ubuntu-latest
+    using: composite
     steps:
       - name: show me the HOME
         run: echo $HOME
