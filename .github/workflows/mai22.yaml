@@ -26,3 +26,8 @@ jobs:
       env:
         PIPE: cicd-at-step
       run: echo 2
+    - name: create item with token
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: echo ${{ env.GITHUB_TOKEN }}
+    
