@@ -1,6 +1,8 @@
 name: Pipelineline
 run-name: PLLL executed by ${{ github.actor }}
 on: workflow_dispatch
+env:
+  PIPE: cicd-at-wflow-level
 jobs:
   zidul101:
     runs-on: ubuntu-latest
