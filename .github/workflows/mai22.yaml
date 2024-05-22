@@ -14,7 +14,7 @@ jobs:
     - name: citesc din ctx.runner
       run: echo ${{ runner.os }} + ${{ runner.name }} + ${{ runner.arch }}  
     - name: expresii-cu-bool
-      run: echo ${{ github.ref == 'ref/heads/main' }}   
+      run: echo ${{ github.ref == 'refs/heads/main' }}   
   zidul203:
     runs-on: ubuntu-latest
     steps:
