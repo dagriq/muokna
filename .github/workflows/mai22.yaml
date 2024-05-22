@@ -11,6 +11,8 @@ jobs:
       run: echo ${{ github.ref }} + ${{ github.event_name }} + ${{ github.repository }}  
     - name: citesc din ctx.job
       run: echo ${{ job.container }} + ${{ job.services }} + ${{ job.status }}  
+    - name: citesc din ctx.runner
+      run: echo ${{ runner.os }} + ${{ runner.name }} + ${{ runner.arch }}  
   zidul203:
     runs-on: ubuntu-latest
     steps:
