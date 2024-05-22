@@ -9,7 +9,7 @@ jobs:
       PIPE: cicd-at-jobs
     runs-on: ubuntu-latest
     steps:
-    - name: zid101
+    - name: zid101-step
       run: |
            echo 1
            echo ${{ env.PIPE }}
@@ -24,12 +24,14 @@ jobs:
   zidul203:
     runs-on: ubuntu-latest
     steps:
-    - name: sunt pe zidul263
+    - name: sunt pe zidul263-step
       env:
         PIPE: cicd-at-step
       run: echo 2
-    - name: create item with token
+    - name: create item with token - step
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: echo ${{ env.GITHUB_TOKEN }}
+    - name: sa citim alea statice
+      run: echo $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
     
