@@ -22,4 +22,7 @@ jobs:
   zidul203:
     runs-on: ubuntu-latest
     steps:
-    - run: echo 2
+    - name: sunt pe zidul263
+      env:
+        PIPE: cicd-at-step
+      run: echo 2
