@@ -5,6 +5,8 @@ env:
   PIPE: cicd-at-wflow-level
 jobs:
   zidul101:
+    env:
+      PIPE: cicd-at-jobs
     runs-on: ubuntu-latest
     steps:
     - name: zid101
