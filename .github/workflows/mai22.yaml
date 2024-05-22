@@ -10,8 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: zid101
-      run: echo 1
-      run: echo ${{ env.PIPE }}
+      run: |
+           echo 1
+           echo ${{ env.PIPE }}
     - name: citesc din ctx.github
       run: echo ${{ github.ref }} + ${{ github.event_name }} + ${{ github.repository }}  
     - name: citesc din ctx.job
