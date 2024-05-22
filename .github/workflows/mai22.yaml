@@ -10,9 +10,11 @@ jobs:
     - name: citesc din ctx.github
       run: echo ${{ github.ref }} + ${{ github.event_name }} + ${{ github.repository }}  
     - name: citesc din ctx.job
-      run: echo ${{ job.container }} + ${{ job.services }} + ${{ job.status }}  
+      run: echo ${{ job.container }} + ${{ job.services }} + ${{job.status}}  
     - name: citesc din ctx.runner
       run: echo ${{ runner.os }} + ${{ runner.name }} + ${{ runner.arch }}  
+    - name: expresii-cu-bool
+      run: echo ${{ github.ref == 'ref/heads/main' }}   
   zidul203:
     runs-on: ubuntu-latest
     steps:
