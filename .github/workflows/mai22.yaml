@@ -1,9 +1,12 @@
 name: Pipelineline
- on: workflow_dispatch
- jobs:
-   zidul101:
-     runs-on: ubuntu-latest
-     steps:
+on: workflow_dispatch
+  jobs:
+    zidul101:
+      runs-on: ubuntu-latest
+      steps:
+      - run: echo 1
 
-   zidul203:
-     runs-on: ubuntu-latest
+    zidul203:
+      runs-on: ubuntu-latest
+      steps:
+      - run: echo 2
