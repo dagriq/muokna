@@ -34,4 +34,7 @@ jobs:
       run: echo ${{ env.GITHUB_TOKEN }}
     - name: sa citim alea statice
       run: echo $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
+    - name: check-os
+      if: runner.os != 'Windows'
+      run: echo "The runner's operating system is $RUNNER_OS."
     
