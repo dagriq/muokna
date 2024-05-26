@@ -2,8 +2,8 @@
 name: tot-la-scoala
 on: 
 ########scheduled events
-  schedule: 
-      - cron: '* */8 * * *'
+#  schedule: 
+#      - cron: '* */8 * * *'
 ##    - cron: '*/15 * * * *'  la 15 min
 ########webhook events
   issues: 
